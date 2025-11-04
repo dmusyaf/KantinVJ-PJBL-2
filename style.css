@@ -15,17 +15,16 @@ body {
 .container-layar {
   /* Di HP, kontainer akan memenuhi seluruh lebar layar */
   width: 100%;
-  min-height: 100vh; /* Setidaknya setinggi viewport di HP */
-  background-color: white; /* Latar belakang kontainer */
+  min-height: 100vh; /* Setidaknya setinggi viewport di HP */ /* Latar belakang kontainer */
 }
-.heading {
+.container-heading {
   width: 100%;
   height: 100%;
+  background-image: linear-gradient(to bottom, #31694E, #BBC863);
 }
 .header-nav {
   width: 100%;
   height: 10vh;
-  background-color: white;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -33,7 +32,7 @@ body {
 }
 .navigasi {
   position: fixed;
-  z-index: 9999;
+  z-index: 10;
   top: 20px;
   width: 85%;
   height: 5%;
@@ -74,7 +73,6 @@ body {
   text-shadow: 0 0 30px white;
 }
 .hero {
-  background-color: white;
   width: 100%;
   height: 90vh;
   display: flex;
@@ -90,13 +88,14 @@ body {
   justify-content: center;
 }
 .hero-img h1 {
-  z-index: 10;
   margin-bottom: -1rem;
   padding: 0;
   display: flex;
   text-align: center;
   justify-content: center;
   font-size: 2.3rem;
+  color: white;
+  text-shadow: 0 0 40px white;
 }
 .hero-heading {
   display: flex;
@@ -113,12 +112,14 @@ p {
 .hero-heading h3 {
   font-size: 2rem;
   margin: 0.5rem 0;
+  color: white;
 }
 .hero-heading p {
   width: 80%;
   margin: 0.5rem 0;
   font-size: 1rem;
   text-align: justify;
+  color: white;
 }
 .navigasi-denah h3 {
   font-size: 1rem;
@@ -131,7 +132,7 @@ p {
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: black;
+  background-color: rgba(0, 0, 0, 0.526);
   border-radius: 20px;
   width: 40%;
   height: 5vh;
@@ -147,17 +148,20 @@ p {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  background-color: #BBC863;
 }
 .heading-utama h1 {
   margin: 0;
   padding: 0;
-  font-size: 2rem;
-  color: white;
+  font-size: 3.5rem;
+  font-family: "Imperial Script", cursive;
+  color:white;
+  text-shadow: 0 0 40px white;
+  font-weight: bolder;
 }
 .heading-utama {
   display: flex;
-  background-color: rgb(0, 0, 0);
-  width: 80%;
+  width: 100%;
   height: 3rem;
   justify-content: center;
   align-items: center;
@@ -172,6 +176,7 @@ p {
   margin: 0;
   padding: 0;
   list-style-type: none;
+  color:white;
 }
 .list-kantin {
   width: 100%;
@@ -186,7 +191,7 @@ p {
   align-items: center;
   flex-direction: column;
   flex-wrap: wrap;
-  gap: 3rem;
+  gap: 1rem;
 }
 .list-kantin ul li {
   display: flex;
@@ -222,11 +227,12 @@ a {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.624);
   width: 40%;
   height: 2rem;
   border-radius: 15px;
   color: white;
+  text-decoration: none;
 }
 .about-us h1,
 img,
@@ -236,6 +242,7 @@ p {
   display: flex;
   justify-content: center;
   align-items: center;
+  color:white;
 }
 .about-us {
   width: 100%;
@@ -244,9 +251,9 @@ p {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  background-image: linear-gradient(to top, #31694E, #BBC863);
 }
 .heading-about-us {
-  background-color: rgb(255, 255, 255);
   width: 70%;
 }
 .heading-about-us h1 {
@@ -257,6 +264,10 @@ p {
   width: 90%;
   display: flex;
   justify-content: center;
+}
+.about-us-img img {
+  border-radius: 20px;
+  box-shadow: 0 15px 25px rgba(0, 0, 0, 0.5);
 }
 .about-us-paragraph {
   display: flex;
@@ -273,9 +284,10 @@ p {
 }
 .container-footer p {
   font-size: 0.7rem;
+  color:white;
 }
 .container-footer {
-  background-color: rgba(128, 128, 128, 0.412);
+  background-color: #31694E;
   width: 100%;
   height: 15vh;
   display: flex;
@@ -293,7 +305,7 @@ p {
 .logo-link svg {
   width: 30px;
   height: 30px;
-  color: black;
+  color:white;
 }
 
 /* ==================================== */
