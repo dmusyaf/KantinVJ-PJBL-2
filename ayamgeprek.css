@@ -41,7 +41,7 @@ p, h3 {
       rgba(255, 255, 255, 0) 0%,
       rgba(255, 255, 255, 1) 100%
     ),
-    url("IMGKANTIN/ContohKantin.jpeg");
+    url("./IMGKANTIN/ContohKantin.jpeg");
     background-repeat: no-repeat;
   background-position: top;
   background-size: 100vw 35vh;
