@@ -1,0 +1,334 @@
+/* ==================================== */
+/* Gaya DEFAULT: Tampilan untuk HP (Sesuai Layar) */
+/* ==================================== */
+html {
+  scroll-behavior: smooth;
+}
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: white;
+  text-wrap: wrap;
+  font-family: "Montserrat", sans-serif;
+}
+.container-layar {
+  /* Di HP, kontainer akan memenuhi seluruh lebar layar */
+  width: 100%;
+  min-height: 100vh; /* Setidaknya setinggi viewport di HP */
+  background-color: white; /* Latar belakang kontainer */
+}
+.heading {
+  width: 100%;
+  height: 100%;
+}
+.header-nav {
+  width: 100%;
+  height: 10vh;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.navigasi {
+  position: fixed;
+  z-index: 9999;
+  top: 20px;
+  width: 85%;
+  height: 5%;
+  left: 50%;
+  transform: translateX(-50%);
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(2px);
+}
+.navigasi ul {
+  width: 100%;
+  height: 100%;
+  margin: 0 0;
+  padding: 0 1em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  gap: 20%;
+}
+.navigasi ul li {
+  display: flex;
+  list-style-type: none;
+  font-size: 0.9em;
+  font-weight: bold;
+}
+.navigasi a {
+  text-decoration: none;
+  color: white;
+  transition: all;
+  transition-duration: 500ms;
+}
+.navigasi a:hover {
+  color: white;
+  text-shadow: 0 0 30px white;
+}
+.hero {
+  background-color: white;
+  width: 100%;
+  height: 90vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+.hero-img {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+}
+.hero-img h1 {
+  z-index: 10;
+  margin-bottom: -1rem;
+  padding: 0;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  font-size: 2.3rem;
+}
+.hero-heading {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.hero-heading h3,
+p {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+.hero-heading h3 {
+  font-size: 2rem;
+  margin: 0.5rem 0;
+}
+.hero-heading p {
+  width: 80%;
+  margin: 0.5rem 0;
+  font-size: 1rem;
+  text-align: justify;
+}
+.navigasi-denah h3 {
+  font-size: 1rem;
+  color: white;
+  margin: 0;
+  padding: 1rem;
+}
+.navigasi-denah {
+  margin-bottom: 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: black;
+  border-radius: 20px;
+  width: 40%;
+  height: 5vh;
+}
+.navigasi-denah a {
+  text-decoration: none;
+  color: white;
+}
+.pilihan-kantin {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.heading-utama h1 {
+  margin: 0;
+  padding: 0;
+  font-size: 2rem;
+  color: white;
+}
+.heading-utama {
+  display: flex;
+  background-color: rgb(0, 0, 0);
+  width: 80%;
+  height: 3rem;
+  justify-content: center;
+  align-items: center;
+  margin-top: 5rem;
+  border-radius: 15px;
+}
+.list-kantin ul,
+li,
+img,
+h2,
+p {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+.list-kantin {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.list-kantin ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+  gap: 3rem;
+}
+.list-kantin ul li {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.card-kantin {
+  width: 100vw;
+  height: auto;
+  margin: 3rem 0;
+}
+.card-kantin img,
+h2,
+p,
+a {
+  margin: 0.5rem 0;
+}
+.card-kantin img {
+  border-radius: 15px;
+  box-shadow: 0 15px 25px rgba(0, 0, 0, 0.5);
+  margin-bottom: 2rem;
+}
+.card-kantin h2 {
+  font-size: 1.5rem;
+}
+.card-kantin p {
+  width: 80%;
+  font-size: 1rem;
+  text-align: justify;
+}
+.card-kantin a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(0, 0, 0);
+  width: 40%;
+  height: 2rem;
+  border-radius: 15px;
+  color: white;
+}
+.about-us h1,
+img,
+p {
+  margin: 1rem 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.about-us {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.heading-about-us {
+  background-color: rgb(255, 255, 255);
+  width: 70%;
+}
+.heading-about-us h1 {
+  margin: 0;
+  padding: 0.3em;
+}
+.about-us-img {
+  width: 90%;
+  display: flex;
+  justify-content: center;
+}
+.about-us-paragraph {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 25vh;
+  margin: 2rem 0;
+}
+.about-us-paragraph p {
+  width: 80%;
+  font-size: 1rem;
+  text-align: justify;
+  padding: 0;
+}
+.container-footer p {
+  font-size: 0.7rem;
+}
+.container-footer {
+  background-color: rgba(128, 128, 128, 0.412);
+  width: 100%;
+  height: 15vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.list-footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  gap: 1rem;
+}
+.logo-link svg {
+  width: 30px;
+  height: 30px;
+  color: black;
+}
+
+/* ==================================== */
+/* Media Query: Tampilan untuk Desktop (Layar Lebar) */
+/* ==================================== */
+
+/* Terapkan gaya ini hanya ketika lebar layar di atas 768px (Desktop/Tablet) */
+@media screen and (min-width: 768px) {
+  .-container-layar {
+    width: 400px; /* Lebar HP umumnya sekitar 360px-450px */
+
+    /* Tinggi: Atur tinggi seperti HP (rasio 9:16) */
+    height: 711px; /* Contoh: 400px * 16 / 9 ≈ 711px */
+
+    /* Opsional: Tambahkan efek visual HP */
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+  }
+
+  .list-kantin ul {
+        /* Kembalikan ke baris dan bungkus */
+        flex-direction: row; /* <-- Ubah menjadi baris */
+        flex-wrap: wrap; 
+        
+        /* Pastikan elemen mengisi ruang */
+        justify-content: space-around; /* Atau center */
+        
+        /* Tingkatkan lebar agar muat 2 atau 3 kartu */
+        width: 100%; /* Penuhi layar desktop */
+    }
+
+    .card-kantin {
+        /* Tetapkan lebar agar muat 2 atau 3 kartu */
+        width: 45%; /* Untuk 2 kartu per baris, beri jarak 5% */
+        /* width: 30%; */ /* Untuk 3 kartu per baris */
+    }
+
+}

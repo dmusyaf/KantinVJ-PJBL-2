@@ -1,0 +1,303 @@
+/* ==================================== */
+/* Gaya DEFAULT: Tampilan untuk HP (Sesuai Layar) */
+/* ==================================== */
+html {
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: white;
+  text-wrap: wrap;
+  font-family: "Montserrat", sans-serif;
+}
+img {
+  border-radius: 20px;
+}
+.container-layar {
+  /* Di HP, kontainer akan memenuhi seluruh lebar layar */
+  width: 100%;
+  min-height: 100vh; /* Setidaknya setinggi viewport di HP */
+  background-color: white; /* Latar belakang kontainer */
+}
+.card-header h1,
+p, h3 {
+  margin: 0;
+  padding: 0;
+}
+.header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+  margin: 0 auto;
+  gap: 1rem;
+  background-image: linear-gradient(
+      to bottom,
+      rgba(255, 255, 255, 0) 0%,
+      rgba(255, 255, 255, 1) 100%
+    ),
+    url("/IMGKANTIN/ContohKantin.jpeg");
+    background-repeat: no-repeat;
+  background-position: top;
+  background-size: 100vw 35vh;
+}
+.img-heading {
+  margin: 0 0;
+  padding: 0;
+  margin-top: 3rem;
+}
+.img-heading img {
+  box-shadow: 0 30px 35px rgba(0, 0, 0, 0.5);
+}
+.profile-kantin {
+  width: 85vw;
+  height: 15vh;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+.profile-kantin h1 {
+  color: black;
+  font-size: 1.8rem;
+}
+.profile-kantin p {
+  color: black;
+  font-size: 0.9rem;
+}
+.lokasi-kantin {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 90vw;
+  height: auto;
+  text-align: center;
+  margin-top: 1rem;
+}
+.contact-kantin {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 50vw;
+  height: auto;
+  text-align: center;
+  gap: 0.5rem;
+}
+.navigasi {
+  position: fixed;
+  z-index: 9999;
+  top: 20px;
+  width: 85%;
+  height: 5%;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(2px);
+}
+.navigasi ul {
+  width: 100%;
+  height: 100%;
+  margin: 0 0;
+  padding: 0 1em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  gap: 20%;
+}
+.navigasi ul li {
+  display: flex;
+  list-style-type: none;
+  font-size: 0.9em;
+  font-weight: bold;
+}
+.navigasi a {
+  text-decoration: none;
+  color: white;
+  transition: all;
+  transition-duration: 500ms;
+}
+.navigasi a:hover {
+  color: white;
+  text-shadow: 0 0 30px white;
+}
+.nav-makanan-minuman {
+  width: 100%;
+  height: auto;
+  position: relative;
+  top: 45px;
+}
+.nav-makanan-minuman ul {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;;
+  margin: 0;
+  padding: 0;
+}
+.nav-makanan-minuman ul li {
+  list-style-type: none;
+  font-size: 1.2rem;
+  width: 30vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.nav-makanan-minuman ul li a {
+  text-decoration: none;
+  color: white;
+}
+.makanan, .minuman {
+  padding: 0.5rem;
+  background-color: rgba(0, 0, 0, 0.492) ;
+  border-radius: 15px;
+}
+.container-menu h3,
+p,
+li {
+  margin: 0;
+  padding: 0;
+}
+.container-menu {
+  width: 100%;
+  height: 100%;
+}
+.container-menu-2 {
+  width: 100%;
+  height: 100%;
+}
+.heading-menu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1.2rem;
+}
+.heading-menu h3 {
+  color: black;
+  font-size: 1rem;
+  margin: 0;
+  padding: 0;
+}
+.container-list-menu {
+  background-color: white;
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  margin: 3rem 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.container-list-menu ul {
+  margin: 0 1rem;
+  padding: 0;
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 2rem 2rem;
+}
+.container-list-menu-2 {
+  background-color: white;
+  width: 100vw;
+  height: 70vh;
+  margin: 0 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container-list-menu-2 ul {
+  margin: 0 1rem;
+  padding: 0;
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 2rem 2rem;
+}
+.menu {
+  width: 35%;
+  height: 23vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  border-width: 1px;
+  border-style: solid;
+  border-radius: 15px;
+  padding: 0.5rem;
+  gap: 0.5rem;
+  box-shadow: 0 15px 15px rgba(0, 0, 0, 0.5);
+}
+.menu img {
+  box-shadow: 0 10px 40px rgba(255, 255, 255, 1);
+}
+.menu li {
+    font-size: 0.8rem;
+    font-weight: bold;
+}
+.rating {
+    width: 100%;
+    height: 15%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+}
+.container-footer p {
+  font-size: 0.7rem;
+}
+.container-footer {
+  background-color: rgba(128, 128, 128, 0.412);
+  width: 100vw;
+  height: 15vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+.list-footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  gap: 1rem;
+}
+.logo-link svg {
+  width: 30px;
+  height: 30px;
+  color: black;
+}
+
+
+/* ==================================== */
+/* Media Query: Tampilan untuk Desktop (Layar Lebar) */
+/* ==================================== */
+
+/* Terapkan gaya ini hanya ketika lebar layar di atas 768px (Desktop/Tablet) */
+@media screen and (min-width: 768px) {
+  .-container-layar {
+    width: 400px; /* Lebar HP umumnya sekitar 360px-450px */
+
+    /* Tinggi: Atur tinggi seperti HP (rasio 9:16) */
+    height: 711px; /* Contoh: 400px * 16 / 9 ≈ 711px */
+
+    /* Opsional: Tambahkan efek visual HP */
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+  }
+}
