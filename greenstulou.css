@@ -37,13 +37,17 @@ p, h3 {
   background-image: linear-gradient(to bottom, #31694E, #BBC863);
   background-size: 100% 100%;
 }
-.img-heading {
-  margin: 0 0;
-  padding: 0;
-  margin-top: 3rem;
-}
-.img-heading img {
-  box-shadow: 0 30px 35px rgba(0, 0, 0, 0.5);
+.img-heading-kantin {
+    width: 80%; 
+    position: relative; 
+    padding-bottom: 60%;
+    background-image: url(./IMGKANTIN/KANTIN_1/kantin_1.jpg);
+    background-size: cover;
+    background-position: 50% 35% ;
+    background-repeat: no-repeat;
+    border-radius: 20px; 
+    overflow: hidden;
+    box-shadow: 0 30px 35px rgba(0, 0, 0, 0.5);
 }
 .profile-kantin {
   width: 85vw;
@@ -59,10 +63,15 @@ p, h3 {
 .profile-kantin h1 {
   color:white;
   font-size: 1.8rem;
+  text-shadow: 0 0 30px white;
 }
 .profile-kantin p {
   color:white;
   font-size: 0.9rem;
+}
+.lokasi-kantin h3, p {
+  margin: 0;
+  padding: 0;
 }
 .lokasi-kantin {
   display: flex;
@@ -74,6 +83,10 @@ p, h3 {
   text-align: center;
   margin-top: 1rem;
   color:white;
+  gap: 0.5rem;
+}
+.lokasi-kantin p {
+  height:100%;
 }
 .contact-kantin {
   display: flex;
@@ -135,7 +148,7 @@ p, h3 {
 .nav-makanan-minuman ul {
   display: flex;
   justify-content: space-around;
-  align-items: center;;
+  align-items: center;
   margin: 0;
   padding: 0;
 }
@@ -151,8 +164,8 @@ p, h3 {
   text-decoration: none;
   color: white;
 }
-.makanan, .minuman {
-  padding: 0.5rem;
+.item {
+  padding: 0.5rem 1rem;
   background-color: rgba(0, 0, 0, 0.492) ;
   border-radius: 15px;
 }
@@ -209,8 +222,8 @@ li {
   gap: 2rem 2rem;
 }
 .container-list-menu-2 {
-  width: 100vw;
-  height: 100vh;
+  width: 100%;
+  height: 100%;
   margin: 0 0;
   display: flex;
   justify-content: center;
@@ -226,6 +239,7 @@ li {
   flex-wrap: wrap;
   gap: 2rem 2rem;
   width: 95vw;
+  margin-bottom: 2rem;
 }
 .menu {
   width: 35%;
@@ -235,20 +249,16 @@ li {
   justify-content: center;
   align-items: center;
   text-align: center;
-  border-width: 1px;
-  border-style: solid;
   border-radius: 15px;
   padding: 0.5rem;
   gap: 0.5rem;
   box-shadow: 0 15px 15px rgba(0, 0, 0, 0.5);
-  background-color: white;
-}
-.menu img {
-  box-shadow: 0 10px 40px rgba(255, 255, 255, 1);
+  background: rgba(0, 0, 0, 0.25);
 }
 .menu li {
     font-size: 0.8rem;
     font-weight: bold;
+    color: white;
 }
 .rating {
     width: 100%;
@@ -257,6 +267,9 @@ li {
     justify-content: center;
     align-items: center;
     gap: 0.5rem;
+}
+.rating svg {
+  color: yellow;
 }
 .container-footer p {
   font-size: 0.7rem;

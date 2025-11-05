@@ -19,7 +19,6 @@ img {
   /* Di HP, kontainer akan memenuhi seluruh lebar layar */
   width: 100%;
   min-height: 100vh; /* Setidaknya setinggi viewport di HP */
-  background-color: white; /* Latar belakang kontainer */
 }
 .card-header h1,
 p, h3 {
@@ -27,26 +26,28 @@ p, h3 {
   padding: 0;
 }
 .header {
-  width: 100vw;
-  height: 100%;
-}
-.card-header {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 90vw;
+  width: 100%;
   height: 100vh;
   margin: 0 auto;
   gap: 1rem;
-  background-color: white;
+  background-image: linear-gradient(to bottom, #31694E, #BBC863);
+  background-size: 100% 100%;
 }
-.img-heading {
-  margin: 0 0;
-  padding: 0;
-}
-.img-heading img {
-  box-shadow: 0 30px 35px rgba(0, 0, 0, 0.5);
+.img-heading-kantin {
+    width: 80%; 
+    position: relative; 
+    padding-bottom: 60%;
+    background-image: url(./IMGKANTIN/KANTIN_1/kantin_1.jpg);
+    background-size: cover;
+    background-position: 50% 35% ;
+    background-repeat: no-repeat;
+    border-radius: 20px; 
+    overflow: hidden;
+    box-shadow: 0 30px 35px rgba(0, 0, 0, 0.5);
 }
 .profile-kantin {
   width: 85vw;
@@ -60,12 +61,17 @@ p, h3 {
   margin-top: 1rem;
 }
 .profile-kantin h1 {
-  color: black;
+  color:white;
   font-size: 1.8rem;
+  text-shadow: 0 0 30px white;
 }
 .profile-kantin p {
-  color: black;
+  color:white;
   font-size: 0.9rem;
+}
+.lokasi-kantin h3, p {
+  margin: 0;
+  padding: 0;
 }
 .lokasi-kantin {
   display: flex;
@@ -75,6 +81,12 @@ p, h3 {
   width: 90vw;
   height: auto;
   text-align: center;
+  margin-top: 1rem;
+  color:white;
+  gap: 0.5rem;
+}
+.lokasi-kantin p {
+  height:100%;
 }
 .contact-kantin {
   display: flex;
@@ -85,22 +97,77 @@ p, h3 {
   height: auto;
   text-align: center;
   gap: 0.5rem;
+  color:white;
 }
 .navigasi {
-  width: 70vw;
-  height: 5vh;
-  background-color: rgba(0, 0, 0, 0.478);
+  position: fixed;
+  z-index: 9999;
+  top: 20px;
+  width: 85%;
+  height: 5%;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(2px);
+}
+.navigasi ul {
+  width: 100%;
+  height: 100%;
+  margin: 0 0;
+  padding: 0 1em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  gap: 20%;
+}
+.navigasi ul li {
+  display: flex;
+  list-style-type: none;
+  font-size: 0.9em;
+  font-weight: bold;
+}
+.navigasi a {
+  text-decoration: none;
+  color: white;
+  transition: all;
+  transition-duration: 500ms;
+}
+.navigasi a:hover {
+  color: white;
+  text-shadow: 0 0 30px white;
+}
+.nav-makanan-minuman {
+  width: 100%;
+  height: auto;
+  position: relative;
+  top: 45px;
+}
+.nav-makanan-minuman ul {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  border-radius: 10px;
-  position: fixed;
-  bottom: 100px;
-  backdrop-filter: blur(2px);
+  margin: 0;
+  padding: 0;
 }
-.navigasi h3 a {
-  color: white;
+.nav-makanan-minuman ul li {
+  list-style-type: none;
+  font-size: 1.2rem;
+  width: 30vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.nav-makanan-minuman ul li a {
   text-decoration: none;
+  color: white;
+}
+.item {
+  padding: 0.5rem 1rem;
+  background-color: rgba(0, 0, 0, 0.492) ;
+  border-radius: 15px;
 }
 .container-menu h3,
 p,
@@ -109,35 +176,41 @@ li {
   padding: 0;
 }
 .container-menu {
-  width: 100vw;
+  width: 100%;
   height: 100%;
+  background-color: #BBC863;
 }
 .container-menu-2 {
   width: 100%;
   height: 100%;
+  background-image: linear-gradient(to top, #31694E, #BBC863);
 }
 .heading-menu {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 1rem;
-  background-color: gray;
+  padding: 1.2rem 0;
+  margin-top: 4rem;
+  width: 100%;
+  height: auto;
 }
 .heading-menu h3 {
-  color: black;
-  font-size: 1.7rem;
+  color:white;
+  font-size: 3.4rem;
+  font-family: "Imperial Script", cursive;
   margin: 0;
   padding: 0;
+  text-shadow: 0 0 40px white;
 }
 .container-list-menu {
-  background-color: white;
-  width: 100vw;
+  width: 100%;
   height: 100%;
   padding: 0;
-  margin: 3rem 0;
+  margin: 0 0;
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
 }
 .container-list-menu ul {
   margin: 0 1rem;
@@ -149,13 +222,13 @@ li {
   gap: 2rem 2rem;
 }
 .container-list-menu-2 {
-  background-color: white;
-  width: 100vw;
-  height: 70vh;
+  width: 100%;
+  height: 100%;
   margin: 0 0;
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
 }
 .container-list-menu-2 ul {
   margin: 0 1rem;
@@ -165,19 +238,8 @@ li {
   justify-content: center;
   flex-wrap: wrap;
   gap: 2rem 2rem;
-}
-.heading-menu-2 {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 1rem;
-  background-color: gray;
-}
-.heading-menu-2 h3 {
-  color: black;
-  font-size: 1.7rem;
-  margin: 0;
-  padding: 0;
+  width: 95vw;
+  margin-bottom: 2rem;
 }
 .menu {
   width: 35%;
@@ -187,19 +249,16 @@ li {
   justify-content: center;
   align-items: center;
   text-align: center;
-  border-width: 1px;
-  border-style: solid;
   border-radius: 15px;
   padding: 0.5rem;
   gap: 0.5rem;
   box-shadow: 0 15px 15px rgba(0, 0, 0, 0.5);
-}
-.menu img {
-  box-shadow: 0 10px 40px rgba(255, 255, 255, 1);
+  background: rgba(0, 0, 0, 0.25);
 }
 .menu li {
     font-size: 0.8rem;
     font-weight: bold;
+    color: white;
 }
 .rating {
     width: 100%;
@@ -209,11 +268,15 @@ li {
     align-items: center;
     gap: 0.5rem;
 }
+.rating svg {
+  color: yellow;
+}
 .container-footer p {
   font-size: 0.7rem;
+  color:white;
 }
 .container-footer {
-  background-color: rgba(128, 128, 128, 0.412);
+  background-color: #31694E;
   width: 100vw;
   height: 15vh;
   display: flex;
@@ -232,7 +295,7 @@ li {
 .logo-link svg {
   width: 30px;
   height: 30px;
-  color: black;
+  color:white;
 }
 
 

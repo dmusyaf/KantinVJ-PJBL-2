@@ -212,11 +212,12 @@ a {
 }
 .card-kantin img {
   border-radius: 15px;
-  box-shadow: 0 15px 25px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 30px 25px rgba(0, 0, 0, 0.5);
   margin-bottom: 2rem;
 }
 .card-kantin h2 {
   font-size: 1.5rem;
+  text-shadow: 0 0 30px white;
 }
 .card-kantin p {
   width: 80%;
@@ -259,6 +260,7 @@ p {
 .heading-about-us h1 {
   margin: 0;
   padding: 0.3em;
+  text-shadow: 0 0 30px white;
 }
 .about-us-img {
   width: 90%;
